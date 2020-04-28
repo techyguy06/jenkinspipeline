@@ -8,7 +8,7 @@ pipeline {
     stages{
         stage('Build'){
             steps {
-                bat 'cd C:/Program Files (x86)/Jenkins/workspace/maven-project'
+                bat 'cd ..'
                 bat 'mvn clean package'
             }
             post {
